@@ -1,0 +1,77 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 62.5%; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: #fff;
+}
+
+section {
+    padding: 2rem 7%; 
+}
+
+
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000; 
+    background-color: rgba(1, 1, 3, 0.9); 
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+}
+
+
+.header .logo img {
+    height: 6rem; 
+}
+
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: #fff; 
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid transparent;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom-color: var(--main-color);
+}
+
+
+
+.icons img {
+    margin-left: 2rem;
+    cursor: pointer;
+    filter: invert(1);
+    transition: 0.3s;
+    vertical-align: middle;
+}
+
+.icons img:hover {
+    color: var(--main-color);
+    filter: invert(78%) sepia(21%) saturate(733%) hue-rotate(353deg) brightness(91%) contrast(85%); 
+    
+    transform: scale(1.2); 
+}
